@@ -1,0 +1,4 @@
+<h2>{{meal.name}}</h2>
+<div *ngFor="let mealComp of meal.mealComponents">
+  <app-meal-component-detail [mealComponent]="mealComp"></app-meal-component-detail>
+</div>

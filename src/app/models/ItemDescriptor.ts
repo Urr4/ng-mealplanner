@@ -3,7 +3,7 @@ import {Quantity} from "./Quantity";
 
 export class ItemDescriptor {
 
-  private id: string;
+  id: string;
   item: Item;
   quantity: Quantity;
 

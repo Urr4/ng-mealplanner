@@ -1,7 +1,7 @@
 export class Item {
 
-  private id: string;
-  private name: string;
+  id: string;
+  name: string;
 
   constructor(id: string, name: string) {
     this.id = id;

@@ -22,8 +22,8 @@ export class MealService {
     let itemDescriptor3 = new ItemDescriptor('id3', item3, quantity3);
     let itemDescriptors1: ItemDescriptor[] = [itemDescriptor1, itemDescriptor2];
     let itemDescriptors2: ItemDescriptor[] = [itemDescriptor3];
-    let mealComponent1 = new MealComponent('mc1', 'Gemüsebrühe', itemDescriptors1);
-    let mealComponent2 = new MealComponent('mc2', 'Würstchen', itemDescriptors2);
+    let mealComponent1 = new MealComponent('mc1', 'Gemüsebrühe', 'Brühe wie auf der Packung beschrieben zubereiten. Gemüse hinzufügen, dann 20min köcheln.', itemDescriptors1);
+    let mealComponent2 = new MealComponent('mc2', 'Würstchen', 'Würstchen aus dem Glas nehmen, in kochendes Wasser geben. 10min warten. Fertig.', itemDescriptors2);
     let mealComponents: MealComponent[] = [mealComponent1, mealComponent2];
     let meal = new Meal('m1', 'Gemüsebrühe mit Würstchen', mealComponents);
 

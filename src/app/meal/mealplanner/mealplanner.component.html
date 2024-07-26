@@ -1,0 +1,10 @@
+<h1>MealPlanner</h1>
+<div class="meal-selection">
+  <app-meal-preview-list [meals]="meals" (mealSelected)="selectMeal($event)"></app-meal-preview-list>
+  <div *ngIf="selectedMeal!=null">
+    <app-meal-detail [meal]="selectedMeal"></app-meal-detail>
+  </div>
+</div>
+<div>
+  <app-shopping-list [itemDescriptors]="itemsToBuy"></app-shopping-list>
+</div>

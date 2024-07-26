@@ -2,13 +2,15 @@ import {ItemDescriptor} from "./ItemDescriptor";
 
 export class MealComponent {
 
-  private id: string;
-  private name: string;
-  private itemDescriptors: ItemDescriptor[];
+  id: string;
+  name: string;
+  description: string;
+  itemDescriptors: ItemDescriptor[];
 
-  constructor(id: string, name: string, itemDescriptors: ItemDescriptor[]) {
+  constructor(id: string, name: string, description: string, itemDescriptors: ItemDescriptor[]) {
     this.id = id;
     this.name = name;
+    this.description = description;
     this.itemDescriptors = itemDescriptors;
   }
 

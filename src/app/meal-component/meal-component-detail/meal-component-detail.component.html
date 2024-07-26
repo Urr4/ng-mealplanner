@@ -1,0 +1,7 @@
+<h3>{{mealComponent.name}}</h3>
+<ul *ngFor="let itemDesc of mealComponent.itemDescriptors">
+  <li>
+    <app-item-descriptor [itemDescriptor]="itemDesc"></app-item-descriptor>
+  </li>
+</ul>
+<p>{{mealComponent.description}}</p>
