@@ -1,0 +1,21 @@
+<form [formGroup]="mealComponentForm">
+  <div class="container">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+    <div>
+      <button mat-raised-button color="primary" (click)="submitMealComponent()">Submit</button>
+      <button mat-raised-button color="primary" (click)="abort()">Abort</button>
+    </div>
+  </div>
+
+</form>
+
